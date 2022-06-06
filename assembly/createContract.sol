@@ -13,7 +13,7 @@ contract Factory {
         // - `wei`      create fee
         // - `n`        bytecode
         // - `position` mem[pos, pos+32]
-        // ` `salt`     random salt
+        // - `salt`     random salt
         assembly {
             deployer := create2(
                 0,
