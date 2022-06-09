@@ -9,7 +9,9 @@ contract OwnableContract is Ownable {
     /**
      * @notice Test openzeppelin library 
      * see {Ownable}
-     * requirement:
+     *
+     * requirements:
+     *
      * - `msg.sender` The address must be owner or admin.
      */
     function restricted() public onlyOwner returns(bool) {
