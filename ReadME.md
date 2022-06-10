@@ -11,3 +11,6 @@
 - How to code Safe Contract
 - MarketDao
 - CrossChain
+- Code MEV Bot
+- Code Sandwich Bot
+- Code wool Bot
