@@ -1,6 +1,6 @@
 # Overview
 
-## Abstruct 
+### Abstruct 
 This standard is an extension of EIP-721. It proposes an additional role (user) which can be granted to addresses, and a time where the role is automatically revoked (expires). The user role represents permission to "use" the NFT, but not the ability to transfer it or set users.
 
 
@@ -8,17 +8,17 @@ This standard is an extension of EIP-721. It proposes an additional role (user) 
 
 &nbsp; 
 
-## Clear Rights Assignment
+### Clear Rights Assignment
 &nbsp; &nbsp; With Dual “owner” and “user” roles, it becomes significantly easier to manage what lenders and borrowers can and cannot do with the NFT (in other words, their rights). Additionally, owners can control who the user is and it’s easy for other projects to assign their own rights to either the owners or the users.
 
 &nbsp;
 
-## Simple On-chain Time Management
+### Simple On-chain Time Management
 &nbsp; &nbsp; Once a rental period is over, the user role needs to be reset and the “user” has to lose access to the right to use the NFT. This is usually accomplished with a second on-chain transaction but that is gas inefficient and can lead to complications because it’s imprecise. With the expires function, there is no need for another transaction because the “user” is invalidated automatically after the duration is over.
 
 &nbsp;
 
-## Easy Third-Party Integration
+### Easy Third-Party Integration
 &nbsp; &nbsp; In the spirit of permission less interoperability, this standard makes it easier for third-party protocols to manage NFT usage rights without permission from the NFT issuer or the NFT application. Once a project has adopted the additional user role and expires, any other project can directly interact with these features and implement their own type of transaction. For example, a PFP NFT using this standard can be integrated into both a rental platform where users can rent the NFT for 30 days AND, at the same time, a mortgage platform where users can use the NFT while eventually buying ownership of the NFT with installment payments. This would all be done without needing the permission of the original PFP project.
 
 &nbsp;
